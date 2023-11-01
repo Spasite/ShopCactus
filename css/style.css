@@ -27,11 +27,13 @@ footer {
     padding:  25px 35px;
 }
 p {
+    
     text-align: justify;
     font-size:  20px;
     line-height: 2em;
     margin-bottom: 30px;
 }
+
 h1 {
     text-transform:uppercase ;
     color: #e9efeb;
@@ -68,6 +70,11 @@ dd {
 }
 .link-header {
     color: #e7ebea
+   
+    
+}
+.state :before {
+    content: "Важно!";
 }
 .link-header:focus {
     color:darkslategrey;
@@ -83,7 +90,7 @@ p:lang(ru) {
    font-style:italic;
 }
 p:lang(en) {
-    font-style:initial;
+    color: #186339;
 }
 ol li:nth-child(2n) {
    background-color: #9DB1B6;
@@ -120,4 +127,53 @@ figure {
 .gg:hover {
     color:chocolate;
     text-decoration: underline;
+}
+.check-table {
+    border:solid 5px purple;
+    border-collapse: collapse; 
+}
+.check-table td ,
+.check-table th{
+    border: solid 1px black;
+    padding: 5px 10px;
+}
+.check-table tr :nth-child(odd) {
+    font-weight:bolder;
+    color: royalblue;
+}
+.check-table td:last-child,
+.check-table th :last-child {
+    background-color: #2E8B57;
+    text-align: center;
+}
+p:first-line {
+    letter-spacing: 4px;
+}
+.void {
+    color:brown;
+    margin-top: 20px;
+    
+}
+figcaption+.void{
+    margin-top: 100px;
+}
+.foot {
+    box-shadow:10px 5px 5px rgb(56, 56, 56);
+}
+#contact-form input[type="text"] {
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #eddfff;
+}
+#contact-form input[type="submit"] {
+    background-color: #549e74;
+}
+#contact-form textarea {
+    background-color: #eddfff;
+}
+#contact-form input[type="submit"]:hover {
+   background-color: palegreen;
 }

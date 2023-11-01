@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table class="check-table">
+        <caption>Счёт-фактура</caption>
+        <thead>
+            <tr>
+                <th>наименование</th>
+                <th>цена</th>
+                <th>количество</th>
+                <th>стоимость </th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>карандаш</td>
+                <td rowspan="2">20</td>
+                <td>3</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>кактус</td>
+              
+                <td>2</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>ластик</td>
+                <td>10</td>
+                <td>20</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td colspan="3">Итог</td>
+                <td>660</td>
+            </tr>
+        </tbody>
+    </table>
+    <form id="contact-form">
+        <div class="form-item">
+          <label for="topic"><i>Тема</i></label>
+          <select name="topic" id="topic">
+            <option value="1">Заказать кактус</option>
+            <option value="2">Оставить отзыв/замечание</option>
+            <option value="3">Предложить сотруддничество</option>
+            <option value="4">Другое</option>
+          </select>
+        </div>
+        <div class="form-item">
+        <label for="mail"><i>Введите email </i></label><br>
+        <input id="mail" type="text" placeholder="Email" required><br>
+        </div>
+        <div class="form-item">
+        <label for="pass"><i>Введите пароль</i></label><br>
+        <input id="pass" type="text" placeholder="Password" required><br>
+        </div>
+        <div class="form-item">
+            <label for="textarea" > <i> Текст сообщения</i></label>
+            <br>
+            <textarea id="textarea" type="textarea"  rows="10" placeholder="Текст сообщения"></textarea>
+        </div>
+        <div class="form-item">
+            <input type="submit"  value="Зарегистрироваться" >
+            </div>
+        
+    </form>
+</body>
+</html>
