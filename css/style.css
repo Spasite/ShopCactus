@@ -7,7 +7,7 @@ html {
     font-family: 'Sedgwick Ave Display', cursive;
 }
 header {
-    background-image: url(/img/кактус_обои.jpg);
+    background-image: url(../img/кактус_обои.jpg);
     text-align: center;
 }
 main {
