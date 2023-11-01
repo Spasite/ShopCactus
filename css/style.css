@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 30px;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+header {
+    background-image: url(/img/кактус_обои.jpg);
+    text-align: center;
+}
+main {
+     background-color : #E3EFF2;
+}
+footer {
+    background-color: #8ca194;
+    padding:10px 50px;
+}
+#about {
+    background-color: #E3EFF2;
+    padding:  10px  50 px;
+    text-align: center;
+}
+#articles {
+    background-color: #E3EFF2;
+    padding:  25px 35px;
+}
+p {
+    text-align: justify;
+    font-size:  20px;
+    line-height: 2em;
+    margin-bottom: 30px;
+}
+h1 {
+    text-transform:uppercase ;
+    color: #e9efeb;
+    font-size: 48px;
+    font-style:oblique;
+}
+h2 {
+    text-decoration:dashed;
+    font-size: 30px;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: #8d9c9a;
+    text-decoration: none;
+}
+a:active {
+    color:brown;
+}
+a:hover {
+    color:black;
+    text-decoration: overline;
+}
+a:focus {
+    color:green;
+}
+a:visited {
+    color:#4fa072;
+}
+dd {
+    font-size: 20px;
+}
+.link-header {
+    color: #e7ebea
+}
+.link-header:focus {
+    color:darkslategrey;
+}
+.link-header:hover {
+    color:white;
+    text-decoration: line-through;     
+}
+.footer {
+    color: #e9efeb;
+}
+p:lang(ru) {
+   font-style:italic;
+}
+p:lang(en) {
+    font-style:initial;
+}
+ol li:nth-child(2n) {
+   background-color: #9DB1B6;
+}
+#about img {
+    border-radius: 50%;
+}
+.article1 {
+    border:solid purple;
+    border-radius: 80%;
+    box-shadow:10px 5px 5px purple;
+}
+.suc {
+    font-size: 50px;
+}
+figure {
+    font-size: 15px;
+    text-align: center;
+}
+.grey {
+    font-size: 50px;
+    color:#2E8B57 ;
+}
+.care {
+    font-size: 20px;
+    padding: 20px;
+}
+.pink {
+    color: #186339;
+}
+.gg:focus {
+    color:red;
+}
+.gg:hover {
+    color:chocolate;
+    text-decoration: underline;
+}
