@@ -1,53 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Таблица</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/ico" sizes="32x32" href="icons/favicon.ico">
+<link rel="icon" type="image/ico" sizes="16x16" href="icons/favicon.ico">
+<link rel="shortcut icon" href="icons/favicon.ico">
+<meta property="og:title" content="Магазин кактусов">
+<meta property="og:site_name" content="Магазин кактусов ">
+<meta property="og:url" content="https://spasite.github.io/ShopCactus/table.html">
+<meta property="og:description" content="Сайт небольшой компании, которая занимается продажей кактусов">
+<meta property="og:image" content="https://spasite.github.io/ShopCactus/img/kaktus2.jpg">
+    <title>Сайт верстальщика</title>
 </head>
 <body>
-    <table class="check-table">
-        <caption>Счёт-фактура</caption>
-        <thead>
-            <tr>
-                <th>наименование</th>
-                <th>цена</th>
-                <th>количество</th>
-                <th>стоимость </th>
-            </tr>
-
-        </thead>
-        <tbody>
-            <tr>
-                <td>карандаш</td>
-                <td rowspan="2">20</td>
-                <td>3</td>
-                <td>60</td>
-            </tr>
-            <tr>
-                <td>кактус</td>
-              
-                <td>2</td>
-                <td>400</td>
-            </tr>
-            <tr>
-                <td>ластик</td>
-                <td>10</td>
-                <td>20</td>
-                <td>200</td>
-            </tr>
-            <tr>
-                <td colspan="3">Итог</td>
-                <td>660</td>
-            </tr>
-        </tbody>
-    </table>
-    <form id="contact-form">
+    <header>
+        <h1>Магазин кактусов</h1>
+        <img src="img/cactus-svgrepo-com.svg" alt="Логотип сайта" width="45px">
+        <nav>
+            <ul>
+                <li><a href="index.html">На главную</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>    
+    <form id="contact-form" >
         <div class="form-item">
-          <label for="topic"><i>Тема</i></label>
-          <select name="topic" id="topic">
+          <label for="topic" ><i>Тема</i></label> <br>
+          <select name="topic" id="topic"class="subject" >
             <option value="1">Заказать кактус</option>
             <option value="2">Оставить отзыв/замечание</option>
             <option value="3">Предложить сотруддничество</option>
@@ -55,22 +40,48 @@
           </select>
         </div>
         <div class="form-item">
-        <label for="mail"><i>Введите email </i></label><br>
-        <input id="mail" type="text" placeholder="Email" required><br>
+        <label for="mail"><i>Имя </i></label><br>
+        <input id="mail" type="text" placeholder="Name" required><br>
         </div>
         <div class="form-item">
-        <label for="pass"><i>Введите пароль</i></label><br>
-        <input id="pass" type="text" placeholder="Password" required><br>
+        <label for="pass"><i>Email</i></label><br>
+        <input id="pass" type="email" placeholder="Email" required><br>
         </div>
         <div class="form-item">
             <label for="textarea" > <i> Текст сообщения</i></label>
             <br>
-            <textarea id="textarea" type="textarea"  rows="10" placeholder="Текст сообщения"></textarea>
+            <textarea id="textarea" type="textarea"  rows="10" placeholder="Текст сообщения" required></textarea>
         </div>
+        <div>
+           <label for="date"><i>Дата</i></label><br>
+           <input type="date" name="date" id="date" required><br>
+        </div>
+        <div>
+            <label for="tel"><i>Номер телефона</i></label><br>
+            <input type="tel" name="tel" id="tel" required>
+            
+         </div>
+         <div>
+            <input type="checkbox" id="yes" name="yes" >
+            <label for="yes">Согласие</label>
+          </div>
+        
+          <div>
+            <input type="checkbox" id="no" name="no" >
+            <label for="no">Отказ</label>
+          </div>
+        
         <div class="form-item">
-            <input type="submit"  value="Зарегистрироваться" >
+            <input type="submit"  value="Отправить" >
             </div>
         
     </form>
+</main>
+<footer>
+    <p>&copy;Anya Spasite </p>
+    <p> Вы также можете найти меня <a class="footer" target="_blank" href="https://vk.com/lokizism">здесь</a></p>
+    <a href="https://vk.com/lokizism"><img class="foot" src="img/vk.svg" alt="Вк" width="25px" height="25px"></a><a href="https://t.me/Anya_Spasite"> <img class="foot" src="img/telegram.svg" alt="Телеграмм"  width="25px" height="25px"></a>
+    <a href="https://discord.gg/samkCXAc"><img class="foot" src="img/discord.svg" alt="Дискорд" height="25px" width="25px"></a>
+       </footer>
 </body>
 </html>
